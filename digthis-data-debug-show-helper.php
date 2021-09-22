@@ -68,9 +68,9 @@ function vczapi_test_footer() {
 	<?php
 }
 add_action( 'init', function () {
+	vczapi_test_footer();
 	if ( filter_input( INPUT_GET, 'cm-test' ) == '1' ) {
 		//you show answer the debug data you want to see here.
 		die;
 	}
-	vczapi_test_footer();
 } );
